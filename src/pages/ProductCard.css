@@ -1,0 +1,64 @@
+/* Container for the entire section */
+.section-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Styled heading */
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-style: italic; */
+  }
+  
+  /* Box container */
+  .boxes-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Individual box styling */
+  .box {
+    width: 300px;
+    height: 300px; /* Increased to accommodate text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Image styling */
+  .box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .box:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* Caption styling */
+  .box p {
+    margin: 10px 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    padding: 5px;
+    font-style: italic;
+  }
+  
