@@ -1,22 +1,28 @@
-import React from "react";
+import React,{  useEffect } from "react";
 import "./About.css";
 import Nav from '../components/nav';
 import Footer from '../components/Footer';
 import Stud from '../components/images/students.jpg'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function About() {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+   }, []) 
   return (
     <>
     <Nav/>
-    <div className="about-page">
+    <div data-aos="fade-up"  className="about-page">
       <section className="hero">
-        <h1> Topstar Schools</h1>
-        <p>Providing Excellence in Education for a Brighter Future</p>
+        <h1 data-aos="fade-up" > Topstar Schools</h1>
+        <p data-aos="fade-up" >Providing Excellence in Education for a Brighter Future</p>
       </section>
       <section className="about-content">
-        <div className="about-text">
-          <h2>Who We Are</h2>
-          <p>
+        <div data-aos="fade-up"  className="about-text">
+          <h2 data-aos="fade-up" >Who We Are</h2>
+          <p data-aos="fade-up" >
             At Topstar Schools, we are committed to nurturing young minds and providing a well-rounded 
             education. Our mission is to create a supportive learning environment where students thrive 
             academically, socially, and morally.
@@ -31,24 +37,24 @@ export default function About() {
         </div>
       </section>
       <section className="vision-mission">
-        <div className="vision">
-          <h2>Our Vision</h2>
-          <p>
+        <div data-aos="fade-up"  className="vision">
+          <h2 data-aos="fade-up" >Our Vision</h2>
+          <p data-aos="fade-up" >
             To be a leading educational institution that inspires students to reach their full potential, 
             shaping them into responsible global citizens.
           </p>
         </div>
-        <div className="mission">
-          <h2>Our Mission</h2>
-          <p>
+        <div data-aos="fade-up"  className="mission">
+          <h2 data-aos="fade-up" >Our Mission</h2>
+          <p data-aos="fade-up" >
             To provide high-quality education in a nurturing and innovative environment, fostering 
             intellectual, moral, and social growth in every student.
           </p>
         </div>
       </section>
       <section className="map-section">
-  <h2>Find Us</h2>
-  <div className="map-container">
+  <h2 data-aos="fade-up" >Find Us</h2>
+  <div data-aos="fade-up" className="map-container">
     <iframe
       title="Topstar Schools Location"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.236922391011!2d3.3290345737295706!3d6.491656423535185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8eaf73826029%3A0x59666ae0fd30aeff!2sTopstar%20Group%20of%20Schools!5e0!3m2!1sen!2sng!4v1741299316259!5m2!1sen!2sng"

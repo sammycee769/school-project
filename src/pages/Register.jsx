@@ -74,10 +74,10 @@ export default function Register() {
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
-              <input type="text" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} required />
+              <input type="tel" name="phoneNumber" placeholder="Phone Number" value={formData.phoneNumber} onChange={handleChange} required />
               <input type="text" name="address" placeholder="Home Address" value={formData.address} onChange={handleChange} required />
               <input type="text" name="guardianName" placeholder="Guardian's Full Name" value={formData.guardianName} onChange={handleChange} required />
-              <input type="text" name="guardianPhone" placeholder="Guardian's Phone Number" value={formData.guardianPhone} onChange={handleChange} required />
+              <input type="tel" name="guardianPhone" placeholder="Guardian's Phone Number" value={formData.guardianPhone} onChange={handleChange} required />
               <input type="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
               <input type="password" name="confirmPassword" placeholder="Confirm Password" value={formData.confirmPassword} onChange={handleChange} required />
               <button type="submit">Register</button>

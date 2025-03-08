@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import Nav from '../components/nav'
 import Header from '../components/header'
 import Prin from '../components/images/prin.jpg'
@@ -6,41 +6,48 @@ import './Home.css'
 import ProductCard from './Schoolcard'
 import Footer from '../components/Footer'
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 export default function Home() {
+ 
+  useEffect(()=>{
+  Aos.init({duration: 2000})
+ }, []) 
+
   return (
     <>
     <Nav/>
     <Header/>
-<div className="proprietor-section">
+<div data-aos="fade-up" className="proprietor-section">
   <div className="proprietor-content">
   <img src={Prin} alt="Proprietor" className="proprietor-image" />
   <div className="proprietor-text">
-    <h2>Message from the Proprietor</h2>
-    <p>
-      Welcome to Princeton Schools, where every child is given the tools to thrive. 
+    <h2 data-aos="fade-up">Message from the Proprietor</h2>
+    <p data-aos="fade-up">
+      Welcome to TopStar Schools, where every child is given the tools to thrive. 
       Our school is not just about education; it's about nurturing creativity, leadership, 
       and confidence in every student. We believe in a future where our students stand 
       out in academics, sports, and innovation. Join us on this journey of excellence.
     </p>
-    <p>
+    <p data-aos="fade-up">
            "Education is more than just acquiring knowledge; it is the foundation upon which 
             dreams are built and futures are shaped. At our institution, we are committed 
             to nurturing not just brilliant minds but also compassionate, innovative, and 
             forward-thinking leaders.  
           </p>
-          <p>
+          <p data-aos="fade-up">
             Our goal is to create an environment where students are inspired to think 
             critically, embrace creativity, and develop the confidence to excel in all aspects of life.  
             We believe in holistic education—one that balances academic excellence with moral 
             integrity, leadership, and a strong sense of purpose.
           </p>
-          <p>
+          <p data-aos="fade-up">
             Every child has limitless potential, and it is our mission to unlock that greatness. 
             With a team of dedicated educators, a cutting-edge curriculum, and a community 
             that fosters growth, we are shaping a generation that will not only succeed but also 
             make a lasting impact on the world.  
           </p>
-          <p>
+          <p data-aos="fade-up">
             We welcome you to be part of this transformative journey, where learning knows no 
             boundaries, and success is not just a goal but a way of life."
           </p>
@@ -50,7 +57,7 @@ export default function Home() {
 </div>
 <div className="info-section">
   <div className="info-container">
-    <div className="info-box">
+    <div data-aos="fade-up" className="info-box">
       <h3> Upcoming Events</h3>
       <div className="scrolling-container">
         <ul className="scrolling-text">
@@ -67,7 +74,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="info-box">
+    <div data-aos="fade-up" className="info-box">
       <h3>Latest News</h3>
       <div className="scrolling-container">
         <ul className="scrolling-text">
@@ -84,7 +91,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="info-box">
+    <div data-aos="fade-up" className="info-box">
       <h3>Achievements</h3>
       <div className="scrolling-container">
         <ul className="scrolling-text">

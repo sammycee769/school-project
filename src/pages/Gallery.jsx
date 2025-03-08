@@ -1,4 +1,4 @@
-import React from "react";
+import React,{  useEffect } from "react";
 import Footer from '../components/Footer'
 import Nav from '../components/nav'
 import "./Gallery.css";
@@ -18,18 +18,25 @@ import img13 from "../components/images/seniors.jpg"
 import img14 from "../components/images/prefets.jpg"
 import img15 from "../components/images/full student.jpg"
 import img16 from "../components/images/gallery.jpg"
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Gallery = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+   }, []) 
+  
+
   const images = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img16,img13,img14,img15];
 
   return (
     <>
      <Nav/>
-    <div className="gallery-page">
+    <div data-aos="fade-up"  className="gallery-page">
       <h1>Our Gallery</h1>
       <p>Explore memorable moments at Topstar Schools</p>
       
-      <div className="gallery-grid">
+      <div data-aos="fade-up"  className="gallery-grid">
         {images.map((img, index) => (
           <div key={index} className="gallery-item">
             <img src={img} alt={`Gallery ${index + 1}`} />

@@ -103,7 +103,7 @@ const Slideshow = () => {
         <div className="slide-content">
           <h2>{slides[index].subtitle}</h2>
           <h1>{slides[index].title}</h1>
-          <button> <a href="../components/pages/Portal.jsx" style={{color:"white",textDecoration:"none"}}>{slides[index].buttonText}
+          <button> <a href="/register" style={{color:"white",textDecoration:"none"}}>{slides[index].buttonText}
           </a>
           </button>
         </div>
